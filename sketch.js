@@ -52,8 +52,7 @@ function feedDog(){
   if(foodObj.getFoodStock()<= 0){
     foodObj.updateFoodStock(foodObj.getFoodStock()*0);
   }else{
-    //foodObj.updateFoodStock(foodObj.getFoodStock()-1);
-    foodObj.deductFood();
+    foodObj.updateFoodStock(foodObj.getFoodStock()-1);
   }
 }
 
